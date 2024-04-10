@@ -14,19 +14,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.firstFragment1.setOnClickListener {
-            replaceFragment(Fragment1())
-        }
-
-        binding.firstFragment2.setOnClickListener {
-            replaceFragment(Fragment2())
-        }
+        replaceFragment(Fragment1(), R.id.fragment1)
+        replaceFragment(Fragment2(), R.id.fragment2)
     }
 
-    private fun replaceFragment(fragment: Fragment) {
+    private fun replaceFragment(fragment: Fragment, id: Int) {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragment, fragment)
+        fragmentTransaction.replace(id, fragment)
         fragmentTransaction.commit()
     }
 }
