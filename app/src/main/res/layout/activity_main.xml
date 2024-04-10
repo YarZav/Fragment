@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="600dp" />
+
+    <Button
+        android:id="@+id/firstFragment1"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="231dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Fragment1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <Button
+        android:id="@+id/firstFragment2"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Fragment2"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+</RelativeLayout>
